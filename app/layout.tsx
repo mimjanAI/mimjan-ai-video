@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export const metadata = {
   title: "Vision Dream AI",
   description: "AI-powered video generator",
@@ -5,9 +7,9 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
